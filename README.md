@@ -9,7 +9,7 @@ the Python standard library for HTTP — no `requests`, no provider SDKs.
 From source (until published to PyPI):
 
 ```bash
-git clone https://github.com/Shyam-Parikh-2025/Agentlib.git
+git clone https://github.com/yourusername/agentlib.git
 cd agentlib
 pip install -e .
 ```

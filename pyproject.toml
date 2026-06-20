@@ -26,8 +26,8 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/yourusername/agentlib"
-Issues = "https://github.com/yourusername/agentlib/issues"
+Homepage = "https://github.com/Shyam-Parikh-2025/agentlib"
+Issues = "https://github.com/Shyam-Parikh-2025/agentlib/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
