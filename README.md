@@ -1,29 +1,30 @@
-# agentlib
+# anyagent
 
 A small, zero-dependency, provider-agnostic agent for chatting with LLMs and
 giving them tools. Works with Anthropic, OpenAI, Gemini, and Ollama using only
 the Python standard library for HTTP — no `requests`, no provider SDKs.
+v0.1.0, educational/experimental, not production-hardened
 
 ## Install
 
 From source (until published to PyPI):
 
 ```bash
-git clone https://github.com/yourusername/agentlib.git
-cd agentlib
+git clone https://github.com/Shyam-Parikh-2025/anyagent.git
+cd anyagent
 pip install -e .
 ```
 
 Once published:
 
 ```bash
-pip install agentlib
+pip install anyagent
 ```
 
 ## Quick start
 
 ```python
-from agentlib import Agent
+from anyagent import Agent
 
 agent = Agent(
     provider="anthropic",

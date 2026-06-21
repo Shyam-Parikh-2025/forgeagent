@@ -1,6 +1,6 @@
 # Test made with AI to speed up validation
 import json
-from agentlib import Agent
+from anyagent import Agent
 
 class FakeResponder:
     def __init__(self, responses):
@@ -102,7 +102,7 @@ print("PASS: plain string tool outputs pass through untouched")
 # Test 4: max_tool_iterations default is 10 and raises when exceeded
 agent = make_agent()
 agent.add_tool(get_weather)
-assert agent.max_tool_iterations == 10
+assert agent.max_tool_iterations == 6
 infinite = {"content": [{"type": "tool_use", "id": "x", "name": "get_weather", "input": {"city": "NYC"}}]}
 responder = FakeResponder([infinite] * 15)
 agent._send_request = responder
@@ -111,7 +111,7 @@ try:
     assert False, "should have raised"
 except RuntimeError as e:
     assert "max_tool_iterations" in str(e)
-print("PASS: max_tool_iterations defaults to 10 and raises when exceeded")
+print("PASS: max_tool_iterations defaults to 6 and raises when exceeded")
 
 # Test 5: set_max_tool_iterations lets the user change it easily
 agent = make_agent()
