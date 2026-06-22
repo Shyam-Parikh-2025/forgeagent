@@ -1,4 +1,4 @@
-# uniagent
+# forgeagent
 
 A small, zero-dependency, provider-agnostic agent for chatting with LLMs and
 giving them tools. Works with Anthropic, OpenAI, Gemini, and Ollama using only
@@ -10,21 +10,21 @@ v0.1.0, educational/experimental, not production-hardened
 From source (until published to PyPI):
 
 ```bash
-git clone https://github.com/Shyam-Parikh-2025/uniagent.git
-cd uniagent
+git clone https://github.com/Shyam-Parikh-2025/forgeagent.git
+cd forgeagent
 pip install -e .
 ```
 
 Once published:
 
 ```bash
-pip install uniagent
+pip install forgeagent
 ```
 
 ## Quick start
 
 ```python
-from uniagent import Agent
+from forgeagent import Agent
 
 agent = Agent(
     provider="anthropic",

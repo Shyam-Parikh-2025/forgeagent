@@ -1,5 +1,5 @@
 import json
-from uniagent import Agent, ToolRegistry, Conversation
+from forgeagent import Agent, ToolRegistry, Conversation
 
 class FakeResponder:
     def __init__(self, responses):

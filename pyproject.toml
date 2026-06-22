@@ -3,7 +3,7 @@ requires = ["setuptools>=68.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "uniagent"
+name = "forgeagent"
 version = "0.1.0"
 description = "A lightweight, zero-dependency, provider-agnostic LLM agent with tool-calling support for Anthropic, OpenAI, Gemini, and Ollama."
 readme = "README.md"
@@ -26,8 +26,8 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/Shyam-Parikh-2025/uniagent"
-Issues = "https://github.com/Shyam-Parikh-2025/uniagent/issues"
+Homepage = "https://github.com/Shyam-Parikh-2025/forgeagent"
+Issues = "https://github.com/Shyam-Parikh-2025/forgeagent/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
